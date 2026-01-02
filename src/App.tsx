@@ -1,3 +1,4 @@
+import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ProjectCard } from './components/ProjectCard';
@@ -119,7 +120,7 @@ export default function App() {
           <div className="space-y-8">
             {developmentProjects.map((project, index) => (
               <ProjectCard
-                key={index}
+
                 title={project.title}
                 description={project.description}
                 images={project.images}
@@ -144,7 +145,6 @@ export default function App() {
           <div className="space-y-16">
             {designProjects.map((project, index) => (
               <GraphicDesignCard
-                key={index}
                 title={project.title}
                 description={project.description}
                 images={project.images}

@@ -3,7 +3,12 @@ import React, { useEffect, useRef, useState } from 'react';
 export function AsciiWall() {
   const [grid, setGrid] = useState([]);
   const currentArtRef = useRef(0);
-  const transitionRef = useRef({ isTransitioning: false, progress: 0, lastDisplayStart: Date.now() });
+  const transitionRef = useRef({ 
+    isTransitioning: false, 
+    progress: 0, 
+    lastDisplayStart: Date.now(),
+    committedPositions: new Set() // Track positions that have committed to their final state
+  });
 
   const asciiArts = [
     [
@@ -47,7 +52,7 @@ export function AsciiWall() {
   ];
 
   const subtitle = [
-    "Hacking away at every layer of the stack",
+    "Hacking away at every layer of the stack,",
     "from backend solutions to frontend designs."
   ];
 
@@ -96,7 +101,7 @@ export function AsciiWall() {
     };
 
     const displayDuration = 4000;
-    const transitionDuration = 2000; // Increased from 1000ms to 1500ms
+    const transitionDuration = 1000; // Increased from 1000ms to 1500ms
 
     const updateGrid = () => {
       const now = Date.now();
@@ -105,6 +110,7 @@ export function AsciiWall() {
       if (!trans.isTransitioning && now - trans.lastDisplayStart > displayDuration) {
         trans.isTransitioning = true;
         trans.transitionStartTime = now;
+        trans.committedPositions.clear(); // Reset committed positions for new transition
       }
 
       if (trans.isTransitioning) {
@@ -115,6 +121,7 @@ export function AsciiWall() {
           trans.isTransitioning = false;
           currentArtRef.current = (currentArtRef.current + 1) % asciiArts.length;
           trans.lastDisplayStart = now;
+          trans.committedPositions.clear(); // Clear committed positions when transition ends
         }
       }
 
@@ -150,30 +157,44 @@ export function AsciiWall() {
               char = trans.progress < 0.5 ? prevChar : nextChar;
               color = '#ffffff';
             } else if (inPrev && !inNext) {
-              char = prevArt.positions.get(posKey);
-              
-              // Smoother flicker - use squared progress for more gradual transition
-              const flickerThreshold = Math.random();
-              const adjustedProgress = trans.progress * trans.progress;
-
-              if (flickerThreshold < adjustedProgress) {
+              // Character should disappear
+              if (trans.committedPositions.has(posKey)) {
+                // Already committed to off state
                 char = ' ';
                 color = 'transparent';
               } else {
-                color = '#ffffff';
+                char = prevArt.positions.get(posKey);
+                const flickerThreshold = Math.random();
+                const adjustedProgress = trans.progress * trans.progress;
+
+                if (flickerThreshold < adjustedProgress) {
+                  // Flickered off - commit to off state
+                  char = ' ';
+                  color = 'transparent';
+                  trans.committedPositions.add(posKey);
+                } else {
+                  color = '#ffffff';
+                }
               }
             } else if (!inPrev && inNext) {
-              char = nextArt.positions.get(posKey);
-              
-              // Smoother flicker - use squared progress for more gradual transition
-              const flickerThreshold = Math.random();
-              const adjustedProgress = trans.progress * trans.progress;
-
-              if (flickerThreshold < adjustedProgress) {
+              // Character should appear
+              if (trans.committedPositions.has(posKey)) {
+                // Already committed to on state
+                char = nextArt.positions.get(posKey);
                 color = '#ffffff';
               } else {
-                char = ' ';
-                color = 'transparent';
+                char = nextArt.positions.get(posKey);
+                const flickerThreshold = Math.random();
+                const adjustedProgress = trans.progress * trans.progress;
+
+                if (flickerThreshold < adjustedProgress) {
+                  // Flickered on - commit to on state
+                  color = '#ffffff';
+                  trans.committedPositions.add(posKey);
+                } else {
+                  char = ' ';
+                  color = 'transparent';
+                }
               }
             }
           } else {

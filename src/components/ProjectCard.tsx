@@ -29,7 +29,7 @@ export function ProjectCard({ title, description, images, techStack }: ProjectCa
                     <ImageWithFallback
                       src={image}
                       alt={`${title} screenshot ${index + 1}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                 </CarouselItem>

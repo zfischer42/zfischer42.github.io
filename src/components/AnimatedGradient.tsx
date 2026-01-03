@@ -3,6 +3,7 @@ export function AnimatedGradient() {
     <div 
       className="absolute inset-0 overflow-hidden"
       style={{
+        zIndex: 0,
         maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 100%)',
         WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8) 20%, rgba(0,0,0,0) 100%)',
       }}

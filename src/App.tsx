@@ -1,63 +1,97 @@
-import React from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ProjectCard } from './components/ProjectCard';
 import { GraphicDesignCard } from './components/GraphicDesignCard';
 import { 
-  Code2, 
+  // Code2, 
   Database, 
   Layout, 
   Smartphone, 
+  ShieldCheck,
   Server, 
   Cloud,
-  ShoppingCart,
+  // ShoppingCart,
   BarChart3,
-  Layers
+  Layers,
+  FlaskConical,
+  Flame,
+  Rocket,
+  Play,
+  Hexagon,
+  Zap
 } from 'lucide-react';
+
+import thruline_1 from '@/static/images/fullstack/thruline/thruline_1.png';
+import thruline_2 from '@/static/images/fullstack/thruline/thruline_2.png';
+import neuron_1 from '@/static/images/fullstack/neuron/neuron_1.png';
+import neuron_2 from '@/static/images/fullstack/neuron/neuron_2.png';
+import crux_1 from '@/static/images/fullstack/crux/CruX Home Page.png';
+import crux_2 from '@/static/images/fullstack/crux/CruX Home Page 2.png';
+import crux_3 from '@/static/images/fullstack/crux/CruX Generator.png';
+import crux_4 from '@/static/images/fullstack/crux/CruX Article.png';
+import ideahacks_1 from '@/static/images/fullstack/ideahacks/Idea Hacks 26 Home.png';
+
+
 
 export default function App() {
   const developmentProjects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with real-time inventory management, secure payment processing, and admin dashboard. Built with a focus on performance and user experience.",
+      title: "Thruline • ERP System",
+      description: "Integrated third-party AI APIs like Photon and Bem. Create end-to-end tests with Cypress. Fix all kinds of bugs. ",
       images: [
-        "https://images.unsplash.com/photo-1658297063569-162817482fb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxlY29tbWVyY2UlMjB3ZWJzaXRlfGVufDF8fHx8MTc2MTYyODU4MXww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1565229284535-2cbbe3049123?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RlJTIwcHJvZ3JhbW1pbmd8ZW58MXx8fHwxNzYxNjM4MjAxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzYxNjcxMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        thruline_1,
+        thruline_2
       ],
       techStack: [
-        { name: "React", icon: <Layout className="w-4 h-4" /> },
+        { name: "Angular", icon: <Layout className="w-4 h-4"/> },
         { name: "Node.js", icon: <Server className="w-4 h-4" /> },
-        { name: "PostgreSQL", icon: <Database className="w-4 h-4" /> },
-        { name: "AWS", icon: <Cloud className="w-4 h-4" /> },
+        { name: "Mongo Atlas", icon: <Database className="w-4 h-4" /> },
       ]
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time analytics dashboard with customizable widgets, data visualization, and reporting capabilities. Features interactive charts and exportable reports.",
+      title: "Neuron • Brainwave Analysis Platform",
+      description: "Built complete website and authenticated web app to generate reports using company algorithm and user data.\nMentored new interns to implement features like report management.",
       images: [
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkYXNoYm9hcmQlMjBhbmFseXRpY3N8ZW58MXx8fHwxNzYxNjcxMjY3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1758598497143-84a0cfdc9958?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjB3ZWIlMjBhcHBsaWNhdGlvbnxlbnwxfHx8fDE3NjE2NjgxODJ8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        neuron_1,
+        neuron_2      
       ],
       techStack: [
-        { name: "TypeScript", icon: <Code2 className="w-4 h-4" /> },
-        { name: "React", icon: <Layout className="w-4 h-4" /> },
-        { name: "D3.js", icon: <BarChart3 className="w-4 h-4" /> },
-        { name: "MongoDB", icon: <Database className="w-4 h-4" /> },
+        { name: "Angular", icon: <Layout className="w-4 h-4" /> },
+        { name: "Node.js", icon: <Server className="w-4 h-4" /> },
+        { name: "Firebase", icon: <Database className="w-4 h-4" /> },
+        { name: "Flask", icon: <Zap className="w-4 h-4" /> },
+        { name: "Vercel", icon: <Cloud className="w-4 h-4" /> },
+        { name: "Google Cloud Run", icon: <Play className="w-4 h-4" /> },
       ]
     },
     {
-      title: "Mobile-First Social App",
-      description: "A responsive social networking application with real-time messaging, user profiles, and content sharing. Optimized for mobile devices with progressive web app capabilities.",
+      title: "ideahacks.la",
+      description: "Led team of 4 to develop website for largest hardware hackathon on the west coast.",
       images: [
-        "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2JpbGUlMjBhcHAlMjBpbnRlcmZhY2V8ZW58MXx8fHwxNzYxNjczMzcyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1558181445-eca4774b2a37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB3b3Jrc3BhY2V8ZW58MXx8fHwxNzYxNjYzMzIwfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        ideahacks_1
       ],
       techStack: [
-        { name: "React Native", icon: <Smartphone className="w-4 h-4" /> },
-        { name: "Node.js", icon: <Server className="w-4 h-4" /> },
-        { name: "GraphQL", icon: <Layers className="w-4 h-4" /> },
-        { name: "Redis", icon: <Database className="w-4 h-4" /> },
+        { name: "SvelteKit", icon: <Layers className="w-4 h-4" /> },
+        { name: "Supabase", icon: <Database className="w-4 h-4" /> },
+        { name: "Firebase", icon: <ShieldCheck className="w-4 h-4" /> },
+        { name: "Vercel", icon: <Cloud className="w-4 h-4" /> },
+      ]
+    },
+    {
+      title: "CruX Publication",
+      description: "Developed and managed full publication website for campus neurotech organization with 20+ people.",
+      // 2024-2025
+      // cruxpublication.com
+      images: [
+        crux_1,
+        crux_2,
+        crux_3,
+        crux_4,
+      ],
+      techStack: [
+        { name: "SvelteKit", icon: <Layers className="w-4 h-4" /> },
+        { name: "Firebase", icon: <Database className="w-4 h-4" /> },
+        { name: "Vercel", icon: <Cloud className="w-4 h-4" /> },
       ]
     },
   ];
@@ -101,8 +135,13 @@ export default function App() {
     },
   ];
 
+
+
+
+  // Actual Website
   return (
     <div className="min-h-screen bg-zinc-950">
+      {/*  background color: rgb(9 9 11); */}
       <Navbar />
       <Hero />
       
@@ -118,7 +157,7 @@ export default function App() {
           </div>
           
           <div className="space-y-8">
-            {developmentProjects.map((project, index) => (
+            {developmentProjects.map((project) => (
               <ProjectCard
 
                 title={project.title}
@@ -143,7 +182,7 @@ export default function App() {
           </div>
           
           <div className="space-y-16">
-            {designProjects.map((project, index) => (
+            {designProjects.map((project) => (
               <GraphicDesignCard
                 title={project.title}
                 description={project.description}

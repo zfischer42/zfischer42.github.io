@@ -234,12 +234,14 @@ export function AsciiWall() {
       margin: 0,
       padding: 0,
       overflow: 'hidden',
-      backgroundColor: 'transparent',
+      background: 'linear-gradient(to bottom, rgba(9,9,11,0) 0%, rgba(9,9,11,.5) 50%, rgba(9,9,11) 100%)',
       fontFamily: 'monospace',
       fontSize: '11px',
       lineHeight: '1.05',
       whiteSpace: 'pre',
-      userSelect: 'none'
+      userSelect: 'none',
+      position: 'relative',
+      zIndex: 1
     }}>
       {grid.map((row, rowIdx) => (
         <div key={rowIdx} style={{ height: '12.55px' }}>

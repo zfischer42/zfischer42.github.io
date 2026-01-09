@@ -187,6 +187,8 @@
 html {
   font-size: var(--font-size);
   scroll-behavior: smooth;
+  overscroll-behavior-y: none;
+  scrollbar-width: none;
 }
 
 

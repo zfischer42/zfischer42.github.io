@@ -10,6 +10,7 @@ export function AsciiWall() {
     committedPositions: new Set() // Track positions that have committed to their final state
   });
 
+  // https://patorjk.com/software/taag/#p=display&f=Georgia11&t=Graphic+Design&x=none&v=4&h=4&w=80&we=false
   const asciiArts = [
     [
       "                                                                                                   ",

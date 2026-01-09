@@ -31,13 +31,38 @@ import crux_3 from '@/static/images/fullstack/crux/CruX Generator.png';
 import crux_4 from '@/static/images/fullstack/crux/CruX Article.png';
 import ideahacks_1 from '@/static/images/fullstack/ideahacks/Idea Hacks 26 Home.png';
 
+import enabler_tote from '@/static/images/graphics/enabler/New Yorker Tote.jpg'
+import enabler_monkey_typewriter from '@/static/images/graphics/enabler/Monkey Typewriter.png'
+import enabler_monkey_newspaper from '@/static/images/graphics/enabler/Monkey Newspaper.png'
+import enabler_merch_ad from '@/static/images/graphics/enabler/Merch Ad 2.png'
+import enabler_article_hippopotamus from '@/static/images/graphics/enabler/Article Hippopotamus.jpg'
+import enabler_article_mcdonalds from '@/static/images/graphics/enabler/Article McDonalds.jpg'
+import enabler_article_sphere from '@/static/images/graphics/enabler/Article Las Vegas Sphere.png'
+import enabler_article_sofi from '@/static/images/graphics/enabler/Article Sofi Stadium.png'
+import enabler_article_elon_cuck from '@/static/images/graphics/enabler/Article Elon Musk Cuck Chair.png'
+
+import carrot_ambassador from '@/static/images/graphics/carrot/Ambassador Flier.jpg'
+import carrot_app_promo from '@/static/images/graphics/carrot/Promo Flier v5.0.jpg'
+import carrot_times_article from '@/static/images/graphics/carrot/News Article - Image.jpg'
+
+import big_money from '@/static/images/graphics/fun/Big Money.png'
+import could_be_worse_back from '@/static/images/graphics/fun/Could-Be-Worse back.png'
+import could_be_worse from '@/static/images/graphics/fun/Could-Be-Worse.png'
+import invisible_party from '@/static/images/graphics/fun/Invisible Party.png'
+import milf_mixer from '@/static/images/graphics/fun/Milf Mixer.png'
+import communist_party from '@/static/images/graphics/fun/Communist Party.png'
+import spirit_week_2022 from '@/static/images/graphics/fun/Spirit Week 2022.jpg'
+import spirit_week_2023 from '@/static/images/graphics/fun/Spirit Week 2023.jpg'
+import thinker from '@/static/images/graphics/fun/Thinker.png'
+import succession from '@/static/images/graphics/fun/Succession Arrested Development.jpg'
+import transcend from '@/static/images/graphics/fun/Transcend.png'
 
 
 export default function App() {
   const developmentProjects = [
     {
       title: "Thruline • ERP System",
-      description: "Integrated third-party AI APIs like Photon and Bem. Create end-to-end tests with Cypress. Fix all kinds of bugs. ",
+      description: "Integrated third-party AI APIs like Photon and Bem. Created end-to-end tests with Cypress. Fixed all kinds of bugs. ",
       images: [
         thruline_1,
         thruline_2
@@ -97,42 +122,56 @@ export default function App() {
   ];
 
   const designProjects = [
+    // {
+    //   title: "Print",
+    //   description: "Newspapers and magazines, complete with custom graphics",
+    //   images: [
+        
+    //   ]
+    // },
     {
-      title: "Brand Identity & Logo Design",
-      description: "Complete brand identity system with modern logo variations",
+      title: "The Westwood Enabler",
+      description: "Merch and article graphics for the best satire magazine on campus.",
       images: [
-        "https://images.unsplash.com/photo-1713616147761-c126f8009c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dvJTIwZGVzaWdufGVufDF8fHx8MTc2MTY0MjQxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1614036634955-ae5e90f9b9eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZCUyMGlkZW50aXR5fGVufDF8fHx8MTc2MTY1ODkxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1744819181935-edb1c6924d0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZGVzaWdufGVufDF8fHx8MTc2MTY4OTU4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0eXBvZ3JhcGh5JTIwZGVzaWdufGVufDF8fHx8MTc2MTY1ODQ5M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1621974714993-465ae51a4483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFwaGljJTIwZGVzaWduJTIwcG9zdGVyfGVufDF8fHx8MTc2MTY0OTkwNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1629927464439-6ba2167656fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGFydHdvcmt8ZW58MXx8fHwxNzYxNjQwNTc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        enabler_monkey_newspaper,
+        enabler_monkey_typewriter,
+        enabler_merch_ad,
+        enabler_tote,
+        enabler_article_hippopotamus,
+        enabler_article_elon_cuck,
+        enabler_article_mcdonalds,
+        enabler_article_sphere,
+        enabler_article_sofi
       ]
     },
     {
-      title: "Marketing Campaign Posters",
-      description: "Series of promotional posters for digital marketing campaigns",
+      title: "Carrot",
+      description: "Series of promotional posters for digital and on campus marketing campaigns",
       images: [
-        "https://images.unsplash.com/photo-1621974714993-465ae51a4483?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxncmFwaGljJTIwZGVzaWduJTIwcG9zdGVyfGVufDF8fHx8MTc2MTY0OTkwNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1681836096486-6da65687f03b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBpbGx1c3RyYXRpb258ZW58MXx8fHwxNzYxNjc3OTY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1629927464439-6ba2167656fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGFydHdvcmt8ZW58MXx8fHwxNzYxNjQwNTc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0eXBvZ3JhcGh5JTIwZGVzaWdufGVufDF8fHx8MTc2MTY1ODQ5M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1744819181935-edb1c6924d0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZGVzaWdufGVufDF8fHx8MTc2MTY4OTU4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1614036634955-ae5e90f9b9eb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxicmFuZCUyMGlkZW50aXR5fGVufDF8fHx8MTc2MTY1ODkxN3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        carrot_ambassador,
+        carrot_app_promo,
+        carrot_times_article,
       ]
     },
     {
-      title: "UI/UX Design Mockups",
-      description: "High-fidelity mockups and prototypes for web applications",
+      title: "Just For Fun",
+      description: "Future merch ideas, random bits, and satirical/real posters (up for you to decide)",
       images: [
-        "https://images.unsplash.com/photo-1730794545099-14902983739d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3ZWIlMjBkZXNpZ24lMjBtb2NrdXB8ZW58MXx8fHwxNzYxNjk3NzU3fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1681836096486-6da65687f03b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBpbGx1c3RyYXRpb258ZW58MXx8fHwxNzYxNjc3OTY5fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1744819181935-edb1c6924d0b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsaXN0JTIwZGVzaWdufGVufDF8fHx8MTc2MTY4OTU4Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1713616147761-c126f8009c6f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsb2dvJTIwZGVzaWdufGVufDF8fHx8MTc2MTY0MjQxOHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1738003667850-a2fb736e31b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0eXBvZ3JhcGh5JTIwZGVzaWdufGVufDF8fHx8MTc2MTY1ODQ5M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-        "https://images.unsplash.com/photo-1629927464439-6ba2167656fb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjcmVhdGl2ZSUyMGFydHdvcmt8ZW58MXx8fHwxNzYxNjQwNTc1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        communist_party,
+        invisible_party,
+        milf_mixer,
+        spirit_week_2022,
+        spirit_week_2023,
+        succession,
+        thinker,
+        big_money,
+        transcend,
+        could_be_worse,
+        could_be_worse_back,
       ]
+      
     },
+    
   ];
 
 
@@ -146,10 +185,10 @@ export default function App() {
       <Hero />
       
       {/* Development Projects Section */}
-      <section id="development" className="py-24 px-6 bg-zinc-950">
-        <div className="max-w-5xl mx-auto">
+      <section id="development" className="mx-auto py-24 px-6 bg-zinc-950">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-white mb-4">Development Projects</h2>
+            <h2 className="text-white mb-4">WebDev and SWE Projects</h2>
             <p className="text-zinc-400 max-w-2xl mx-auto">
               Full stack applications showcasing my skills in modern web development, 
               scalable architecture, and problem-solving.
@@ -172,7 +211,7 @@ export default function App() {
       
       {/* Graphic Design Section */}
       <section id="design" className="py-24 px-6 bg-zinc-900 border-t border-zinc-800">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-white mb-4">Graphic Design</h2>
             <p className="text-zinc-400 max-w-2xl mx-auto">

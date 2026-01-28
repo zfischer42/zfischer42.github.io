@@ -137,11 +137,11 @@ export default function App() {
         enabler_monkey_typewriter,
         enabler_merch_ad,
         enabler_tote,
-        enabler_article_hippopotamus,
-        enabler_article_elon_cuck,
+        // enabler_article_hippopotamus,
+        // enabler_article_elon_cuck,
         enabler_article_mcdonalds,
         enabler_article_sphere,
-        enabler_article_sofi
+        // enabler_article_sofi
       ]
     },
     {
